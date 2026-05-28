@@ -9,7 +9,7 @@ A lambda expression can be used directly where a single-method interface is expe
 
 ## How Lamba is Used in This Program
 
-The program uses the standard Java `Predicate<T>` functional interface from `java.util.function`.
+The program uses the standard Java `Predicate<T>`.
 
 A `Predicate<Pet>` is a function that takes a `Pet` object and returns `true` or `false` based on a condition.
 
@@ -37,7 +37,7 @@ if (predicate.test(pet)) {
 }
 ```
 
-This makes the code flexible: you can change the happiness test without modifying the method logic.
+This makes the code really flexible and efficient as you can change the happiness test without modifying the method logic.
 
 ## Program Behavior
 
@@ -58,16 +58,3 @@ This makes the code flexible: you can change the happiness test without modifyin
 - `pet -> pet.getHappy() >= 30`
 
 These two lambda expressions are used to evaluate whether each pet is "happy" or "very happy".
-
-## How to Run
-
-From the repository folder, compile and run the program with:
-
-```bash
-javac Pet.java PetSimulator.java
-java PetSimulator
-```
-
-## Why This Matters
-
-Using lambda expressions improves readability and allows behavior to be passed into methods easily. In this example, the same `showHappiness` method can evaluate different happiness thresholds without changing its implementation.
