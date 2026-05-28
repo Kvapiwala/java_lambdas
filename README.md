@@ -1,21 +1,13 @@
 # Java Lambda Pet Simulator
 
-## Overview
-
-This repository contains a simple Java program that simulates caring for pets and demonstrates how a lambda expression can be used in Java.
-
-The program consists of two classes:
-
-- `Pet.java` - defines a `Pet` object with attributes for name, type, owner, energy, and happiness.
-- `PetSimulator.java` - creates and manages a collection of pets, performs actions on them, and evaluates pet happiness using a lambda expression.
 
 ## What is a Lambda Function?
 
-In Java, a lambda expression is a short way to represent an anonymous function. It allows you to pass behavior as data, making code more concise and easier to read.
+In Java, a lambda expression essentially is an invisible method that can be written in one line. It allows you to pass in parameters as data too, which simplifies code and makes it easier to read.
 
-Instead of creating a separate class or anonymous inner class to implement a functional interface, a lambda expression can be used directly where a single-method interface is expected.
+A lambda expression can be used directly where a single-method interface is expected, there is no need for an external class.
 
-## How It’s Used in This Program
+## How Lamba is Used in This Program
 
 The program uses the standard Java `Predicate<T>` functional interface from `java.util.function`.
 
