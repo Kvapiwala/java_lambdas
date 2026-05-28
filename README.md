@@ -37,8 +37,6 @@ if (predicate.test(pet)) {
 }
 ```
 
-This makes the code really flexible and efficient as you can change the happiness test without modifying the method logic.
-
 ## Program Behavior
 
 `PetSimulator` does the following:
